@@ -1,0 +1,6 @@
+/* Natural Tags */
+
+body {
+  background-color: black;
+  transition: background-color ease-in-out 5s;
+}
