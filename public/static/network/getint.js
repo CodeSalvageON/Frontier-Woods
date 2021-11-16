@@ -1,0 +1,1 @@
+// Ping the server every once in a while to find out if it is day or night 

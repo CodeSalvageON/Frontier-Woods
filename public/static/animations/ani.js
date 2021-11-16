@@ -5,7 +5,7 @@ let day_or_night = "day";
 
 function createDay (weather) { // Day and Night, although night only needs one condition
   if (weather.toLowerCase() === "sunny") {
-    main_body.style.backgroundColor = "#ceef20";
+    main_body.style.backgroundColor = "beige";
   }
 
   else if (weather.toLowerCase() === "cloudy") {

@@ -104,6 +104,16 @@ app.get('', function (req, res) {
   res.sendFile(index);
 });
 
+app.get('/weather', function (req, res) {
+  res.send(weather_current);
+});
+
+app.get('/day', function (req, res) {
+  res.send(day_or_night);
+});
+
+// Network checkers
+
 function checkForValidID (id) { // Check for a valid ID
   if (id.includes("park") || id.includes("ecosphere") || id.includes("exurb") || id.includes("rush")) {
     return true;

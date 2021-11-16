@@ -2,10 +2,18 @@
 <html>
   <head>
     <title>Frontier Woods</title>
-
+    
+    <link href="/static/styles/magichat.css" rel="stylesheet" type="text/css">
     <link href="/static/styles/style.css" rel="stylesheet" type="text/css">
   </head>
   <body> 
+    <div class="absolute-center glow-brown-box" id="game-window">
+      <div id="stats">
+        <pre id="temp-stat">Temperature: 0*F</pre>
+        <pre id="health-stat">Total Health: 100</pre>
+        <pre id="hunger-stat">Starvation: 0</pre> 
+      </div> 
+    </div>
 
     <!-- Sounds -->
     <audio src="/static/sounds/rain.mp3" id="rain-sound" loop></audio>

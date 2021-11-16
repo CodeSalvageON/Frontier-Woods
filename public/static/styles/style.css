@@ -4,3 +4,21 @@ body {
   background-color: black;
   transition: background-color ease-in-out 5s;
 }
+
+/* Class */
+
+.glow-brown-box {
+  box-shadow: 2px 2px 5px burlywood;
+}
+
+/* IDs */
+
+#game-window {
+  width: 600px;
+  height: 600px;
+  border: 3px solid burlywood;
+}
+
+#stats {
+  color: red;
+}
