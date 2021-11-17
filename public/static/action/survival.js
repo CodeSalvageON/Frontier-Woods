@@ -7,3 +7,11 @@ let hunger = 0;
 let hydro = 100;
 let exp = 0;
 let knowledge = 0;
+
+// Store in save files 
+const temp_store = localStorage.getItem("frwoods_temp");
+const health_store = localStorage.getItem("frwoods_health");
+const hunger_store = localStorage.getItem("frwoods_hunger");
+const hydro_store = localStorage.getItem("frwoods_hydro");
+const exp_store = localStorage.getItem("frwoods_exp");
+const knowledge_store = localStorage.getItem("frwoods_knowledge");
