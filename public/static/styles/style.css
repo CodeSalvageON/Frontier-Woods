@@ -5,6 +5,11 @@ body {
   transition: background-color ease-in-out 5s;
 }
 
+pre {
+  font-weight: light;
+  font-family: monospace;
+}
+
 /* Class */
 
 .glow-brown-box {
@@ -32,4 +37,11 @@ body {
   right: 0px;
   color: red;
   position: absolute;
+}
+
+/* Font Faces */
+
+@font-face {
+  font-family: 'C64';
+  src: url('../static/styles/fonts/commodore_64/c64.TFF') format('truetype');
 }
