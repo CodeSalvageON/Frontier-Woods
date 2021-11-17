@@ -109,6 +109,7 @@ app.get('/weather', function (req, res) {
 });
 
 app.get('/day', function (req, res) {
+  console.log("REQUEST FOR DAY SENT");
   res.send(day_or_night);
 });
 
