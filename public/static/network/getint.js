@@ -49,7 +49,7 @@ function reqListener () {
   }
 }
 
-setInterval (function () { // Every one minute the server is pinged!
+let weatherInterval = setInterval (function () { // Every one minute the server is pinged!
   if (client_type === "browser") {
     fetch ("/weather")
     .then(response => response.text())
@@ -96,7 +96,7 @@ setInterval (function () { // Every one minute the server is pinged!
   }
 }, 60000);
 
-setInterval(function () { // Every 5 minutes the server is pinged!
+let dayInterval = setInterval(function () { // Every 5 minutes the server is pinged!
   if (client_type === "browser") {
     fetch ("/day")
     .then(response => response.text())
@@ -120,7 +120,7 @@ setInterval(function () { // Every 5 minutes the server is pinged!
     request_type = "day";
     let oReq = new XMLHttpRequest();
     oReq.addEventListener("load", reqListener);
-    oReq.open("GET", "https://Frontier-Woods.codesalvageon.repl.co/weather");
+    oReq.open("GET", "https://Frontier-Woods.codesalvageon.repl.co/day");
     oReq.send();
   }
 
