@@ -49,84 +49,88 @@ function reqListener () {
   }
 }
 
-let weatherInterval = setInterval (function () { // Every one minute the server is pinged!
-  if (client_type === "browser") {
-    fetch ("/weather")
-    .then(response => response.text())
-    .then(data => {
-      if (data === "sunny") {
-        createDay("sunny");
-      }
+function weatherInterval () { 
+  setInterval (function () { // Every one minute the server is pinged!
+    if (client_type === "browser") {
+      fetch ("/weather")
+      .then(response => response.text())
+      .then(data => {
+        if (data === "sunny") {
+          createDay("sunny");
+        }
 
-      else if (data === "cloudy") {
-        createDay("cloudy");
-      }
+        else if (data === "cloudy") {
+          createDay("cloudy");
+        }
 
-      else if (data === "rain") {
-        createRain();
-      }
+        else if (data === "rain") {
+          createRain();
+        }
 
-      else if (data === "thunder") {
-        createThunder();
-      }
+        else if (data === "thunder") {
+          createThunder();
+        }
 
-      else if (data === "snowy") {}
+        else if (data === "snowy") {}
 
-      else {
-        console.log("Connection to weather route on server lost.");
-      }
-    })
-    .catch(error => {
-      throw error;
-    });
-  }
+        else {
+          console.log("Connection to weather route on server lost.");
+        }
+      })
+      .catch(error => {
+        throw error;
+      });
+    }
 
-  else if (client === "app") {
-    request_type = "weather";
-    let oReq = new XMLHttpRequest();
-    oReq.addEventListener("load", reqListener);
-    oReq.open("GET", "https://Frontier-Woods.codesalvageon.repl.co/weather");
-    oReq.send();
-  }
+    else if (client === "app") {
+      request_type = "weather";
+      let oReq = new XMLHttpRequest();
+      oReq.addEventListener("load", reqListener);
+      oReq.open("GET", "https://Frontier-Woods.codesalvageon.repl.co/weather");
+      oReq.send();
+    }
 
-  else {
-    console.log("Invalid client used.");
+    else {
+      console.log("Invalid client used.");
 
-    // Here there be dragons!
-  }
-}, 60000);
+      // Here there be dragons!
+    }
+  }, 60000);
+}                             
 
-let dayInterval = setInterval(function () { // Every 5 minutes the server is pinged!
-  if (client_type === "browser") {
-    fetch ("/day")
-    .then(response => response.text())
-    .then(data => {
-      if (data === "day") {
-        stopThunder();
-        createDay("day");
-      }
+function dayInterval () { 
+  setInterval(function () { // Every 5 minutes the server is pinged!
+    if (client_type === "browser") {
+      fetch ("/day")
+      .then(response => response.text())
+      .then(data => {
+        if (data === "day") {
+          stopThunder();
+          createDay("day");
+        }
 
-      else {
-        stopThunder();
-        createDay("night");
-      }
-    })
-    .catch(error => {
-      throw error;
-    });
-  }
+        else {
+          stopThunder();
+          createDay("night");
+        }
+      })
+      .catch(error => {
+        throw error;
+      });
+    }
 
-  else if (client_type === "app") {
-    request_type = "day";
-    let oReq = new XMLHttpRequest();
-    oReq.addEventListener("load", reqListener);
-    oReq.open("GET", "https://Frontier-Woods.codesalvageon.repl.co/day");
-    oReq.send();
-  }
+    else if (client_type === "app") {
+      request_type = "day";
+      let oReq = new XMLHttpRequest();
+      oReq.addEventListener("load", reqListener);
+      oReq.open("GET", "https://Frontier-Woods.codesalvageon.repl.co/day");
+      oReq.send();
+    }
 
-  else {
-    console.log("Invalid client used.");
+    else {
+      console.log("Invalid client used.");
 
-    // Here there be dragons!
-  }
-}, 300000);
+      // Here there be dragons!
+    }
+  }, 300000);
+}
