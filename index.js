@@ -106,6 +106,7 @@ app.get('', function (req, res) {
 
 app.get('/weather', function (req, res) {
   res.send(weather_current);
+  console.log("Weather request recieved");
 });
 
 app.get('/day', function (req, res) {
