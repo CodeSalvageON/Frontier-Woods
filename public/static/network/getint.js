@@ -44,8 +44,8 @@ function reqListener () {
   }
 
   else {
-    console.log("Bad request type recieved.");
-    return "Bad request type recieved.";
+    console.log("Bad request type received.");
+    return "Bad request type received.";
   }
 }
 

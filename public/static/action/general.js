@@ -17,3 +17,12 @@ const knowledge_stat = document.getElementById("knowledge-stat");
 // Initial styling for the page, using JQuery
 $("#stats").hide();
 $("#stats2").hide();
+
+// Conditional styling functions
+function hidePresets () {
+  $("#presets").hide();
+}
+  // Why the hell did I even do this?
+function showPresets () {
+  $("#presets").show();
+}
