@@ -1,4 +1,4 @@
-// General Script for listing off variables for DOM Manipulation
+// General Script for listing off variables for DOM Manipulation and saved presets
 // Begin
 
 // Body and sound effects
@@ -19,6 +19,11 @@ const offlineInput = document.getElementById("offline");
 const onlineInput = document.getElementById("online");
 const serverWeatherInput = document.getElementById("server-weather");
 const offlineWeatherInput = document.getElementById("offline-weather");
+
+// Saved Presets
+let temp_mode_preset = "";
+let temp_weather_preset = "";
+const savedWeatherPreset = localStorage.getItem("frwoods_weather_preset");
 
 // Initial styling for the page, using JQuery
 $("#stats").hide();
