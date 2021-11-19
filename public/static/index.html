@@ -21,7 +21,12 @@
       <div id="presets" class="center">
         <pre>Presets list</pre>
         <hr/>
-        <form id="presets-form"></form>
+        <form id="presets-form" align="left">
+          <pre>Mode</pre>
+          <pre><input type="radio" id="offline" value="offline" name="mode"/><label for="offline">Offline</label></pre>
+          <pre><input type="radio" id="online" value="online" name="mode"/><label for="online">Online</label></pre>
+          <pre></pre>
+        </form>
       </div>
     </div>
 
@@ -38,7 +43,7 @@
     <script src="/static/animations/ani.js"></script>
 
     <!-- Networking -->
-    <script src="/static/action/networking/client.js"></script>
-    <script src="/static/action/networking/getint.js"></script>
+    <script src="/static/networkclient.js"></script>
+    <script src="/static/aetworkigetint.js"></script>
   </body>
 </html>
