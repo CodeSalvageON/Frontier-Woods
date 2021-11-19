@@ -21,6 +21,11 @@ input {
   box-shadow: 5px 2px 2px burlywood;
 }
 
+.weird-btn {
+  border: 1px solid red;
+  background-color: clear;
+}
+
 /* IDs */
 
 #game-window {
@@ -46,6 +51,10 @@ input {
 
 #presets {
   color: red;
+}
+
+#presets-btn {
+  width: 300px;
 }
 
 /* Font Faces */
