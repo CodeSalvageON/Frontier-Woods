@@ -3,6 +3,7 @@
 
 // Body and sound effects
 const main_body = document.querySelector("body");
+const game_window = document.getElementById("game-window");
 const rain_sound = document.getElementById("rain-sound");
 const thunder_sound = document.getElementById("thunder-sound");
 

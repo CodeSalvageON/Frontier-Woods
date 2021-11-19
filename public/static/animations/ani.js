@@ -43,3 +43,14 @@ function stopThunder () {
     createDay("night");
   }
 }
+
+// Page transition animations 
+function switchPage (id1, id2) {
+  $(id1).hide();
+  game_window.style.backgroundColor = "red";
+
+  setTimeout(function () {
+    game_window.style.backgroundColor = "clear";
+    $(id2).show();
+  }, 100);
+}
