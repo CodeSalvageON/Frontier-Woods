@@ -14,6 +14,12 @@ const hydro_stat = document.getElementById("hydro-stat");
 const exp_stat = document.getElementById("exp-stat");
 const knowledge_stat = document.getElementById("knowledge-stat");
 
+// Inputs
+const offlineInput = document.getElementById("offline");
+const onlineInput = document.getElementById("online");
+const serverWeatherInput = document.getElementById("server-weather");
+const offlineWeatherInput = document.getElementById("offline-weather");
+
 // Initial styling for the page, using JQuery
 $("#stats").hide();
 $("#stats2").hide();
