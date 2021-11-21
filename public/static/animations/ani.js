@@ -4,15 +4,17 @@
 let day_or_night = "day";
 
 function createDay (weather) { // Day and Night, although night only needs one condition
-  if (weather.toLowerCase() === "sunny") {
+  const lowerCaseWeather = weather.toLowerCase();
+  
+  if (lowerCaseWeather === "sunny") {
     main_body.style.backgroundColor = "beige";
   }
 
-  else if (weather.toLowerCase() === "cloudy") {
+  else if (lowerCaseWeather === "cloudy") {
     main_body.style.backgroundColor = "#373434";
   }
 
-  else if (weather.toLowerCase() === "night") {
+  else if (lowerCaseWeather === "night") {
     main_body.style.backgroundColor = "black";
   }
 
@@ -50,7 +52,7 @@ function switchPage (id1, id2) {
   game_window.style.backgroundColor = "red";
 
   setTimeout(function () {
-    game_window.style.backgroundColor = "clear";
+    game_window.style.backgroundColor = main_body.style.backgroundColor;
     $(id2).show();
   }, 100);
 }

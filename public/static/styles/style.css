@@ -27,7 +27,12 @@ input {
 }
 
 .weird-btn:hover {
+  cursor: default;
   background-color: red;
+}
+
+.commodore {
+  font-family: Commodore;
 }
 
 /* IDs */
@@ -53,7 +58,7 @@ input {
   position: absolute;
 }
 
-#presets {
+#presets, #tutorial {
   color: red;
 }
 
@@ -61,9 +66,18 @@ input {
   width: 300px;
 }
 
+#tutorial-sheet {
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  background-color: burlywood;
+}
+
 /* Font Faces */
 
 @font-face {
-  font-family: 'C64';
-  src: url('../static/styles/fonts/commodore_64/c64.TFF') format('truetype');
+  font-family: 'Commodore';
+  src: url('https://frontier-woods.codesalvageon.repl.co/static/styles/fonts/commodore_64/c64.TTF');
+  font-weight: normal;
+  font-style: normal;
 }

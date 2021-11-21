@@ -2,7 +2,12 @@
 // Begin
 
 // Body and sound effects
-const main_body = document.querySelector("body");
+
+function $0(element) {
+  return document.querySelector(element);
+}
+
+const main_body = $0("body");
 const game_window = document.getElementById("game-window");
 const rain_sound = document.getElementById("rain-sound");
 const thunder_sound = document.getElementById("thunder-sound");
@@ -29,6 +34,8 @@ const savedWeatherPreset = localStorage.getItem("frwoods_weather_preset");
 // Initial styling for the page, using JQuery
 $("#stats").hide();
 $("#stats2").hide();
+$("#tutorial").hide();
+$("#the-woods").hide();
 
 // Conditional styling functions
 function hidePresets () {
@@ -38,3 +45,7 @@ function hidePresets () {
 function showPresets () {
   $("#presets").show();
 }
+
+// Tutorial 
+tutorial_title = document.getElementById("tutorial-title");
+tutorial_content = document.getElementById("tutorial-content");
