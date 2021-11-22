@@ -22,8 +22,8 @@ function reqListener () {
       createThunder();
     }
 
-    else if (request_Response === "snowy") {
-      
+    else if (request_Response === "snowing") {
+      createSnow();
     }
 
     else {
@@ -71,7 +71,9 @@ function weatherInterval () {
           createThunder();
         }
 
-        else if (data === "snowy") {}
+        else if (data === "snowing") {
+          createSnow();
+        }
 
         else {
           console.log("Connection to weather route on server lost.");

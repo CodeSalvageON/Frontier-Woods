@@ -75,4 +75,9 @@ $("#presets-btn").click(function () {
 
 $("#skip-tutorial").click(function () {
   switchPage("#tutorial", "#the-woods");
+  
+  setTimeout(function () {
+    $("#stats").fadeIn(3000);
+    $("#stats2").fadeIn(3000);
+  }, 500);
 });

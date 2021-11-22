@@ -11,6 +11,7 @@ const main_body = $0("body");
 const game_window = document.getElementById("game-window");
 const rain_sound = document.getElementById("rain-sound");
 const thunder_sound = document.getElementById("thunder-sound");
+const snow_sound = document.getElementById("snow-sound");
 
 // Statistics
 const temp_stat = document.getElementById("temp-stat");

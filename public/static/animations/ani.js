@@ -18,6 +18,10 @@ function createDay (weather) { // Day and Night, although night only needs one c
     main_body.style.backgroundColor = "black";
   }
 
+  else if (lowerCaseWeather === "snow") {
+    main_body.style.backgroundColor = "white";
+  }
+
   else {
     return "notvalid";
   }
@@ -39,6 +43,25 @@ function stopThunder () {
 
   if (day_or_night === "day") {
     createDay("sunny");
+  }
+
+  else {
+    createDay("night");
+  }
+}
+
+function createSnow () {
+  stopThunder();
+  snow_sound.play();
+
+  createDay("snow");
+}
+
+function stopSnow () {
+  snow_sound.pause();
+ 
+  if (day_or_night === day) {
+    createDay("sunny"); 
   }
 
   else {
