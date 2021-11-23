@@ -37,6 +37,8 @@ $("#stats").hide();
 $("#stats2").hide();
 $("#tutorial").hide();
 $("#the-woods").hide();
+$("#credits-div").hide();
+$("#woods-pic").hide();
 
 // Conditional styling functions
 function hidePresets () {
@@ -48,5 +50,8 @@ function showPresets () {
 }
 
 // Tutorial 
-tutorial_title = document.getElementById("tutorial-title");
-tutorial_content = document.getElementById("tutorial-content");
+const tutorial_title = document.getElementById("tutorial-title");
+const tutorial_content = document.getElementById("tutorial-content");
+
+// Game
+const woods_pic = document.getElementById("woods-pic");

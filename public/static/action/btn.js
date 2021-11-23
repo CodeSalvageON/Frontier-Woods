@@ -58,6 +58,7 @@ $("#presets-btn").click(function () {
   if ($("#offline-weather").prop("checked")) {
     temp_weather_preset = "offline";
   localStorage.setItem("frwoods_weather_preset", "offline");
+    
   }
 
   else if ($("#server-weather").prop("checked")) {
@@ -79,5 +80,14 @@ $("#skip-tutorial").click(function () {
   setTimeout(function () {
     $("#stats").fadeIn(3000);
     $("#stats2").fadeIn(3000);
+    $("#woods-pic").fadeIn(5000);
   }, 500);
+});
+
+$("#credits-btn").click(function () {
+  switchPage("#presets", "#credits-div");
+});
+
+$("#go-back-from-credits").click(function () {
+  switchPage("#credits-div", "#presets");
 });

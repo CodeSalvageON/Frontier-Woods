@@ -35,6 +35,11 @@ input {
   font-family: Commodore;
 }
 
+.left {
+  left: 3px;
+  position: absolute;
+}
+
 /* IDs */
 
 #game-window {
@@ -58,11 +63,11 @@ input {
   position: absolute;
 }
 
-#presets, #tutorial {
+#presets, #tutorial, #credits-div {
   color: red;
 }
 
-#presets-btn {
+#presets-btn, #credits-btn, #file-btn, #go-back-from-credits {
   width: 300px;
 }
 
