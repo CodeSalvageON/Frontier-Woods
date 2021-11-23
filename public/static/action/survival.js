@@ -15,6 +15,8 @@ const hunger_store = localStorage.getItem("frwoods_hunger");
 const hydro_store = localStorage.getItem("frwoods_hydro");
 const exp_store = localStorage.getItem("frwoods_exp");
 const knowledge_store = localStorage.getItem("frwoods_knowledge");
+const home_store = localStorage.getItem("frwoods_home");
 
 // The actual game itself!
-
+let woods_view = 1;
+let home_type = 1;

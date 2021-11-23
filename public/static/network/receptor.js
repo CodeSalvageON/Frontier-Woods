@@ -17,11 +17,10 @@ function checkReceptor () { // Check if user has a local receptor
 function thruCheckReceptor () {
   if (checkReceptor() === "none") {
     createReceptor();
-    local_receptor.innerText = "Local Receptor: " + currentReceptor;
   }
 
   else {
-    local_receptor.innerText = "Local Receptor: " + currentReceptor;
+    
   }
 }
 

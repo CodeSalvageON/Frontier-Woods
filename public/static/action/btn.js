@@ -92,3 +92,40 @@ $("#credits-btn").click(function () {
 $("#go-back-from-credits").click(function () {
   switchPage("#credits-div", "#presets");
 });
+
+$("#look-btn").click(function () {
+  if (woods_view === 1) {
+    woods_view = 2;
+    switchView("woods1.png");
+  }
+
+  else if (woods_view === 2) {
+    woods_view = 3;
+    switchView("woods2.png");
+  }
+
+  else if (woods_view === 3) {
+    woods_view = 4;
+    switchView("woods3.png");
+  }
+
+  else {
+    woods_view = 1;
+    switchView("woods.png");
+  }
+});
+
+$("#home-btn").click(function () {
+  if (home_type === 1) {
+    switchView("tent.png");
+  }
+
+  else if (home_type === 2) {
+    switchView("cabin.png");
+  }
+
+  else {
+    console.log("Here there be dragons!");
+    // Here there be dragons!
+  }
+});

@@ -67,7 +67,11 @@ input {
   color: red;
 }
 
-#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #look-btn {
+#presets-btn, #credits-btn, #file-btn, #go-back-from-credits {
+  width: 300px;
+}
+
+#look-btn, #home-btn {
   width: 300px;
 }
 
@@ -80,12 +84,29 @@ input {
 
 #woods-controls {
   height: 230px;
+  position: relative;
   background-color: burlywood;
 }
 
-#look-btn {
+#look-btn, #home-btn {
+  top: 0px;
+  height: 32px;
   padding: 5px;
   background-color: black;
+}
+
+#look-btn {
+  left: 0px;
+}
+
+#look-btn:hover, #home-btn:hover {
+  cursor: default;
+  background-color: red;
+}
+
+#home-btn {
+  right: 0px;
+  position: absolute;
 }
 
 /* Font Faces */
