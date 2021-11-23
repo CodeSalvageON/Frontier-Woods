@@ -81,6 +81,7 @@ $("#skip-tutorial").click(function () {
     $("#stats").fadeIn(3000);
     $("#stats2").fadeIn(3000);
     $("#woods-pic").fadeIn(5000);
+    $("#woods-controls").fadeIn(5000);
   }, 500);
 });
 

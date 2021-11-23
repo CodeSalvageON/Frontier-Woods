@@ -67,7 +67,7 @@ input {
   color: red;
 }
 
-#presets-btn, #credits-btn, #file-btn, #go-back-from-credits {
+#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #look-btn {
   width: 300px;
 }
 
@@ -76,6 +76,16 @@ input {
   height: 500px;
   border-radius: 5px;
   background-color: burlywood;
+}
+
+#woods-controls {
+  height: 230px;
+  background-color: burlywood;
+}
+
+#look-btn {
+  padding: 5px;
+  background-color: black;
 }
 
 /* Font Faces */

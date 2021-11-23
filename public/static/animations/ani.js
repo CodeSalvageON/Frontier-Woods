@@ -79,3 +79,14 @@ function switchPage (id1, id2) {
     $(id2).show();
   }, 100);
 }
+
+function switchView (src) {
+  $("#woods-pic").hide();
+  woods_pic.src = "/static/images/" + src;
+  game_window.style.backgroundColor = "blue";
+
+  setTimeout(function () {
+    game_window.style.backgroundColor = main_body.style.backgroundColor;
+    $("#woods-pic").show();
+  }, 200);
+}

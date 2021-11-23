@@ -39,6 +39,7 @@ $("#tutorial").hide();
 $("#the-woods").hide();
 $("#credits-div").hide();
 $("#woods-pic").hide();
+$("#woods-controls").hide();
 
 // Conditional styling functions
 function hidePresets () {
