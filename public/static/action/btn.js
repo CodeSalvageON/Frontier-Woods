@@ -22,6 +22,8 @@ $("#presets-form").submit(function () { // Handle the presets form
   if ($("#offline-weather").prop("checked")) {
     temp_weather_preset = "offline";
   localStorage.setItem("frwoods_weather_preset", "offline");
+
+    setOfflineWeather();
   }
 
   else if ($("#server-weather").prop("checked")) {

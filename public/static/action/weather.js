@@ -1,18 +1,18 @@
 // Handle offline weather
 
 let weather_current = "sunny";
-let day_or_night = "day";
+let day_or_night_offline = "day";
 
 function setOfflineWeather () {
   setInterval(function () {
-    if (day_or_night === "day") {
-      day_or_night = "night";
+    if (day_or_night_offline === "day") {
+      day_or_night_offline = "night";
       stopThunder();
       createDay("day");
     }
 
     else {
-      day_or_night = "day";
+      day_or_night_offline = "day";
       stopThunder();
       createDay("night");
     }

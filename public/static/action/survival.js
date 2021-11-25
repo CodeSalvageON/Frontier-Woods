@@ -20,3 +20,4 @@ const home_store = localStorage.getItem("frwoods_home");
 // The actual game itself!
 let woods_view = 1;
 let home_type = 1;
+let is_at_home = false;

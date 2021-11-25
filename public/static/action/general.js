@@ -40,6 +40,8 @@ $("#the-woods").hide();
 $("#credits-div").hide();
 $("#woods-pic").hide();
 $("#woods-controls").hide();
+$("#woods-console").hide();
+$("#homes-controls").hide();
 
 // Conditional styling functions
 function hidePresets () {

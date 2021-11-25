@@ -49,6 +49,10 @@ input {
   border: 3px solid red;
 }
 
+#game-window:hover {
+  cursor: url('https://frontier-woods.codesalvageon.repl.co/static/images/crosshair.png'), auto;
+}
+
 #stats {
   top: 0px;
   left: 0px;
@@ -101,6 +105,15 @@ input {
 
 #look-btn:hover, #home-btn:hover {
   cursor: default;
+  background-color: red;
+}
+
+#view-console, #forage {
+  color: red;
+  background-color: black;
+}
+
+#view-console:hover, #forage:hover {
   background-color: red;
 }
 
