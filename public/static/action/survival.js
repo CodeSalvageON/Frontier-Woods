@@ -36,6 +36,8 @@ let manure = 0;
 let urine = 0;
 let stones = 0;
 let sulfur = 0;
+let berries = 0;
+let mushrooms = 0;
 
 // Supply limits for the woods
 let woods_1_full = 50;
@@ -45,7 +47,7 @@ let woods_4_full = 50;
 
 function getRandomSupplies (amount) {
   const amount_random = Math.floor(Math.random() * amount + 1);
-  const supplies_random = Math.floor(Math.random() * 9);
+  const supplies_random = Math.floor(Math.random() * 11);
 
   if (supplies_random === 0) {
     for (i = 0; i < amount_random; i++) {
@@ -117,6 +119,22 @@ function getRandomSupplies (amount) {
     }
 
     return "stones||" + amount_random;
+  }
+
+  else if (supplies_random === 9) {
+    for (i = 0; i < amount_random; i++) {
+      berries += 1;
+    }
+
+    return "berries||" + amount_random;
+  }
+
+  else if (supplies_random === 10) {
+    for (i = 0; i < amount_random; i++) {
+      mushrooms += 1;
+    }
+
+    return "mushrooms||" + amount_random;
   }
 }
 

@@ -142,12 +142,82 @@ $("#go-back-from-home").click(function () {
   switchView("woods.png");
 });
 
+function getSuppliesThru (name) {
+  if (name === "woods_1_full") {
+    const supply_arr = getRandomSupplies(woods_1_full).split("||"); 
+    const supply = supply_arr[0];
+    const amt = supply_arr[1];
+
+    woods_1_full = woods_1_full - parseInt(amt);
+    status.innerText = "Found " + amt + " " + supply;
+  }
+
+  else if (name === "woods_2_full") {
+    const supply_arr = getRandomSupplies(woods_2_full).split("||"); 
+    const supply = supply_arr[0];
+    const amt = supply_arr[1];
+
+    woods_2_full = woods_2_full - parseInt(amt);
+    status.innerText = "Found " + amt + " " + supply;
+  }
+
+  else if (name === "woods_3_full") {
+    const supply_arr = getRandomSupplies(woods_3_full).split("||"); 
+    const supply = supply_arr[0];
+    const amt = supply_arr[1];
+
+    woods_3_full = woods_3_full - parseInt(amt);
+    status.innerText = "Found " + amt + " " + supply;
+  }
+
+  else if (name === "woods_4_full") {
+    const supply_arr = getRandomSupplies(woods_4_full).split("||"); 
+    const supply = supply_arr[0];
+    const amt = supply_arr[1];
+
+    woods_4_full = woods_4_full - parseInt(amt);
+    status.innerText = "Found " + amt + " " + supply;
+  }
+}
+
 $("#forage").click(function () {
   if (woods_view === 1) {
     if (woods_1_full > 0) {
-      
+      getSuppliesThru("woods_1_full");
     }
 
-    status.innerText = "Found ";
+    else {
+      status.innerText = "You depleted this node.";
+    }
+  }
+
+  else if (woods_view === 2) {
+    if (woods_2_full > 0) {
+      getSuppliesThru("woods_2_full");
+    }
+
+    else {
+      status.innerText = "You depleted this node.";
+    }
+  }
+
+  else if (woods_view === 3) {
+    if (woods_3_full > 0) {
+      getSuppliesThru("woods_3_full");
+    }
+
+    else {
+      status.innerText = "You depleted this node.";
+    }
+  }
+
+  else if (woods_view === 4) {
+    if (woods_4_full > 0) {
+      getSuppliesThru("woods_4_full");
+    }
+
+    else {
+      status.innerText = "You depleted this node.";
+    }
   }
 });
