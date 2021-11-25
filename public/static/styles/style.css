@@ -86,7 +86,7 @@ input {
   background-color: burlywood;
 }
 
-#woods-controls {
+#woods-controls, #home-controls {
   height: 230px;
   position: relative;
   background-color: burlywood;
@@ -108,18 +108,25 @@ input {
   background-color: red;
 }
 
-#view-console, #forage {
+#view-console, #forage, #go-back-from-home {
   color: red;
   background-color: black;
 }
 
-#view-console:hover, #forage:hover {
+#view-console:hover, #forage:hover, #go-back-from-home:hover {
   background-color: red;
 }
 
 #home-btn {
   right: 0px;
   position: absolute;
+}
+
+#status {
+  margin: 0;
+  color: red;
+  border: 1px solid red;
+  background-color: black;
 }
 
 /* Font Faces */

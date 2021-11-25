@@ -118,6 +118,9 @@ $("#look-btn").click(function () {
 });
 
 $("#home-btn").click(function () {
+  $("#woods-controls").hide();
+  $("#home-controls").show();
+
   if (home_type === 1) {
     switchView("tent.png");
   }
@@ -129,5 +132,22 @@ $("#home-btn").click(function () {
   else {
     console.log("Here there be dragons!");
     // Here there be dragons!
+  }
+});
+
+$("#go-back-from-home").click(function () {
+  $("#home-controls").hide();
+  $("#woods-controls").show(); 
+
+  switchView("woods.png");
+});
+
+$("#forage").click(function () {
+  if (woods_view === 1) {
+    if (woods_1_full > 0) {
+      
+    }
+
+    status.innerText = "Found ";
   }
 });

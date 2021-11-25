@@ -12,6 +12,7 @@ const game_window = document.getElementById("game-window");
 const rain_sound = document.getElementById("rain-sound");
 const thunder_sound = document.getElementById("thunder-sound");
 const snow_sound = document.getElementById("snow-sound");
+const status = document.getElementById("status");
 
 // Statistics
 const temp_stat = document.getElementById("temp-stat");
@@ -41,7 +42,7 @@ $("#credits-div").hide();
 $("#woods-pic").hide();
 $("#woods-controls").hide();
 $("#woods-console").hide();
-$("#homes-controls").hide();
+$("#home-controls").hide();
 
 // Conditional styling functions
 function hidePresets () {
