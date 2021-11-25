@@ -144,3 +144,20 @@ setInterval(function () {
   woods_3_full = 50;
   woods_4_full = 50;
 }, 300000);
+
+// Save supplies
+const wood_store = localStorage.getItem("frwoods_wood");
+const metal_store = localStorage.getItem("frwoods_metal"); 
+const acorns_store = localStorage.getItem("frwoods_acorns"); 
+const meat_store = localStorage.getItem("frwoods_meat"); 
+const seeds_store = localStorage.getItem("frwoods_seeds"); 
+const cooked_meat_store = localStorage.getItem("frwoods_cooked_meat"); 
+const fur_store = localStorage.getItem("frwoods_fur"); 
+const charcoal_store = localStorage.getItem("frwoods_charcoal"); 
+const grass_store = localStorage.getItem("frwoods_grass"); 
+const manure_store = localStorage.getItem("frwoods_manure"); 
+const urine_store = localStorage.getItem("frwoods_urine"); 
+const stones_store = localStorage.getItem("frwoods_stones");
+const sulfur_store = localStorage.getItem("frwoods_sulfur");
+const berries_store = localStorage.getItem("frwoods_berries");
+const mushrooms_store = localStorage.getItem("frwoods_mushrooms");
