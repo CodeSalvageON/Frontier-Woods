@@ -71,6 +71,10 @@ input {
   color: red;
 }
 
+#credits-div, #credits2-div {
+  background-color: #4a4948;
+}
+
 #presets-btn, #credits-btn, #file-btn, #go-back-from-credits {
   width: 300px;
 }
