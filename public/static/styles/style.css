@@ -79,12 +79,22 @@ input {
   background-color: #4a4948;
 }
 
-#presets-btn, #credits-btn, #file-btn, #go-back-from-credits {
+#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #upgrade-btn, #cook-btn {
   width: 300px;
 }
 
 #look-btn, #home-btn {
   width: 300px;
+}
+
+#cook-btn, #upgrade-btn {
+  color: red;
+  text-align: center;
+  background-color: black;
+}
+
+#cook-btn:hover, #upgrade-btn:hover {
+  background-color: red;
 }
 
 #tutorial-sheet {
