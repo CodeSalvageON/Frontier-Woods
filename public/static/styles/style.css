@@ -40,6 +40,10 @@ input {
   position: absolute;
 }
 
+.flex {
+  position: flex;
+}
+
 /* IDs */
 
 #game-window {
@@ -103,8 +107,23 @@ input {
   background-color: black;
 }
 
+#food-btn {
+  height: 32px;
+  padding: 5px;
+  background-color: black;
+}
+
+#travel-btn {
+  background-color: #4a4948;
+}
+
+#food-btn:hover, #travel-btn:hover {
+  background-color: red;
+}
+
 #look-btn {
   left: 0px;
+  position: absolute;
 }
 
 #look-btn:hover, #home-btn:hover {

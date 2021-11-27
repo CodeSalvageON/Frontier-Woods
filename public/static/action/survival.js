@@ -161,3 +161,25 @@ const stones_store = localStorage.getItem("frwoods_stones");
 const sulfur_store = localStorage.getItem("frwoods_sulfur");
 const berries_store = localStorage.getItem("frwoods_berries");
 const mushrooms_store = localStorage.getItem("frwoods_mushrooms");
+
+function startNaturalFuncs () {
+  setInterval(function () {
+    if (hunger < 100) {
+      hunger += 25;
+      hunger_stat = "Starvation: " + hunger;
+    }
+
+    else {
+      health = health - 25;
+      health_stat = "Total Health: " + health;
+
+      if  (health < 1) {
+
+      }
+    }
+
+    if (hydration > 0) {
+      
+    }
+  }, 30000);
+}
