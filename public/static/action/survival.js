@@ -178,8 +178,18 @@ function startNaturalFuncs () {
       }
     }
 
-    if (hydration > 0) {
-      
+    if (hydro > 0) {
+      hydro = hydro - 25;
+      hydro_stat = "Hydration: " + hydro;
+    }
+
+    else {
+      health = health - 25;
+      health_stat = "Total Health: " + health;
+
+      if (health < 1) {
+        
+      }
     }
   }, 30000);
 }
