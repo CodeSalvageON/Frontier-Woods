@@ -120,6 +120,7 @@ input {
 #food-btn {
   height: 32px;
   padding: 5px;
+  color: red;
   background-color: black;
 }
 
@@ -160,6 +161,15 @@ input {
   color: red;
   border: 1px solid red;
   background-color: black;
+}
+
+#home-output {
+  width: 300px;
+  right: 0px;
+  bottom: 0px;
+  height: 56px;
+  position: absolute;
+  background-color: blue;
 }
 
 /* Font Faces */

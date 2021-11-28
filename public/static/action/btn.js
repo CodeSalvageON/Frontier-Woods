@@ -221,3 +221,72 @@ $("#forage").click(function () {
     }
   }
 });
+
+$("#food-btn").click(function () {
+  if (acorns > 0 || meat > 0 || seeds > 0 || cooked_meat > 0 || berries > 0 || mushrooms > 0) {
+    home_status.innerText = "No need for food right now";
+    return false;
+  }
+
+  if (acorns > 0) {
+    acorns = acorns - 1;
+    hunger = hunger - 10;
+
+    if (hunger < 0) {
+      hunger = 0;
+    }
+  }
+
+  if (meat > 0) {
+    meat = meat - 1;
+    hunger = hunger - 30;
+
+    if (hunger < 0) {
+      hunger = 0;
+    }
+  }
+
+  if (seeds > 0) {
+    seeds = seeds - 1;
+    hunger = hunger - 5;
+
+    if (hunger < 0) {
+      hunger = 0;
+    }
+  }
+
+  if (cooked_meat > 0) {
+    cooked_meat = cooked_meat - 1;
+    hunger = hunger - 50;
+
+    if (hunger < 0) {
+      hunger = 0;
+    }
+  }
+
+  if (berries > 0) {
+    berries = berries - 1;
+    hunger = hunger - 10;
+
+    if (hunger < 0) {
+      hunger = 0;
+    }
+  }
+
+  if (mushrooms > 0) {
+    mushrooms = mushrooms - 1;
+    hunger = hunger - 20;
+
+    if (hunger < 0) {
+      hunger = 0;
+    }
+  }
+
+  if (hunger === 0) {
+    home_status.innerText = "Satisfied hunger";
+  }
+
+  if (acorns === 0 && seeds === 0 && meat === 0 && berries === 0 && cooked_meat === 0 && mushrooms === 0) {
+    home_status.innerText = "You have no food";
+  }
+});

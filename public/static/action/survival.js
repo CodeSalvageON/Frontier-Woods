@@ -38,6 +38,7 @@ let stones = 0;
 let sulfur = 0;
 let berries = 0;
 let mushrooms = 0;
+let water = 0;
 
 // Supply limits for the woods
 let woods_1_full = 50;

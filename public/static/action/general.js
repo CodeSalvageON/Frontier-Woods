@@ -13,6 +13,7 @@ const rain_sound = document.getElementById("rain-sound");
 const thunder_sound = document.getElementById("thunder-sound");
 const snow_sound = document.getElementById("snow-sound");
 const status = document.getElementById("status");
+const home_status = document.getElementById("home-status")
 
 // Statistics
 const temp_stat = document.getElementById("temp-stat");
