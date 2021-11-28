@@ -5,6 +5,7 @@ let day_or_night_offline = "day";
 
 function setOfflineWeather () {
   setInterval(function () {
+    console.log("Checking day or night...");
     if (day_or_night_offline === "day") {
       day_or_night_offline = "night";
       stopThunder();
@@ -16,7 +17,7 @@ function setOfflineWeather () {
       stopThunder();
       createDay("night");
     }
-  }, 600000);
+  }, 30000);
 
   setInterval(function () {
     random_weather = Math.floor(Math.random() * 4);
@@ -45,5 +46,5 @@ function setOfflineWeather () {
       weather_current = "snowing";
       createSnow();
     }
-  }, 1200000);
+  }, 120000);
 }
