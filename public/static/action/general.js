@@ -22,6 +22,8 @@ const hunger_stat = document.getElementById("hunger-stat");
 const hydro_stat = document.getElementById("hydro-stat");
 const exp_stat = document.getElementById("exp-stat");
 const knowledge_stat = document.getElementById("knowledge-stat");
+const food_travel_meter = document.getElementById("food-travel-meter");
+const water_bodies_discovered = document.getElementById("water-bodies-discovered");
 
 // Inputs
 const offlineInput = document.getElementById("offline");
@@ -44,6 +46,8 @@ $("#woods-pic").hide();
 $("#woods-controls").hide();
 $("#woods-console").hide();
 $("#home-controls").hide();
+$("#the-plains").hide();
+$("#travel-ops2").hide();
 
 // Conditional styling functions
 function hidePresets () {

@@ -80,7 +80,7 @@ input {
   background-color: #4a4948;
 }
 
-#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #upgrade-btn, #cook-btn {
+#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #upgrade-btn, #cook-btn, #go-back-from-the-plains {
   width: 300px;
 }
 
@@ -103,6 +103,13 @@ input {
   height: 500px;
   border-radius: 5px;
   background-color: burlywood;
+}
+
+#the-plains, #travel-ops2 {
+  width: 500px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: white;
 }
 
 #woods-controls, #home-controls {
@@ -138,17 +145,17 @@ input {
   position: absolute;
 }
 
-#look-btn:hover, #home-btn:hover {
+#look-btn:hover, #home-btn:hover, #lay-traps:hover, #go-back-from-the-plains:hover {
   cursor: default;
   background-color: red;
 }
 
-#view-console, #forage, #go-back-from-home {
+#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring {
   color: red;
   background-color: black;
 }
 
-#view-console:hover, #forage:hover, #go-back-from-home:hover {
+#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover {
   background-color: red;
 }
 

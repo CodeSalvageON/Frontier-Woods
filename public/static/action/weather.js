@@ -45,6 +45,8 @@ function setOfflineWeather () {
     else if (random_weather === 4) {
       weather_current = "snowing";
       createSnow();
+
+      hydro += 25;
     }
   }, 120000);
 }

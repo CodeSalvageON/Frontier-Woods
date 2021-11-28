@@ -292,3 +292,18 @@ $("#food-btn").click(function () {
     home_status.innerText = "You have no food";
   }
 });
+
+$("#travel-btn").click(function () {
+  switchPage("#the-woods", "#the-plains");
+  food_travel_meter.innerText = "Food to Spare: " + food;
+  water_bodies_discovered.innerText = "Water Bodies Discovered: " + water_bodies;
+});
+
+$("#go-back-from-the-plains").click(function () {
+  switchPage("#the-plains", "#the-woods");
+});
+
+$("#start-exploring").click(function () {
+  $("#travel-ops1").hide();
+  $("#travel-ops2").show();
+});
