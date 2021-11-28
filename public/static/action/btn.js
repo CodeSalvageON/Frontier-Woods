@@ -84,6 +84,8 @@ $("#skip-tutorial").click(function () {
     $("#stats2").fadeIn(3000);
     $("#woods-pic").fadeIn(5000);
     $("#woods-controls").fadeIn(5000);
+
+    setOfflineWeather();
   }, 500);
 });
 
