@@ -303,7 +303,51 @@ $("#go-back-from-the-plains").click(function () {
   switchPage("#the-plains", "#the-woods");
 });
 
+function loadHunt () {
+  $("#travel-ops2").hide();
+  $("#travel-hunting").show();
+}
+
 $("#start-exploring").click(function () {
   $("#travel-ops1").hide();
   $("#travel-ops2").show();
+
+  let currentDate = new Date();
+
+  mining_node.innerText = "Mining Node: " + currentDate;
+  let got_supply = false;
+  let is_hunting = false;
+
+  let miningInterval = setInterval(function () {
+    randSupply = Math.floor(Math.random() * 35);
+    randSupplyAmount = Math.floor(Math.random() * 20);
+
+    if (is_hunting === true) {
+      return false;
+    }
+
+    if (randSupplyAmount === 0) {
+      randSupplyAmount = 1;
+    }
+
+    if (randSupply === 0) {
+      mining_node.innerText = "Found some branches.";
+      wood += randSupplyAmount;
+    }
+
+    else if (randSupply === 1) {
+      mining_node.innerText = "Discovered a deposit of various metals!!";
+      metal += randSupplyAmount;
+    }
+
+    else if (randSupply === 2) {
+      mining_node.innerText = "Got some acorns.";
+      acorns += randSupplyAmount;
+    }
+
+    else if (randSupply === 3) {
+      is_hunting = true;
+      loadHunt();
+    }
+  }, 10000);
 });

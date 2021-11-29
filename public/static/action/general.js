@@ -12,8 +12,9 @@ const game_window = document.getElementById("game-window");
 const rain_sound = document.getElementById("rain-sound");
 const thunder_sound = document.getElementById("thunder-sound");
 const snow_sound = document.getElementById("snow-sound");
+const gunshot_sound = document.getElementById("gunshot-sound");
 const status = document.getElementById("status");
-const home_status = document.getElementById("home-status")
+const home_status = document.getElementById("home-status");
 
 // Statistics
 const temp_stat = document.getElementById("temp-stat");
@@ -24,6 +25,7 @@ const exp_stat = document.getElementById("exp-stat");
 const knowledge_stat = document.getElementById("knowledge-stat");
 const food_travel_meter = document.getElementById("food-travel-meter");
 const water_bodies_discovered = document.getElementById("water-bodies-discovered");
+const mining_node = document.getElementById("mining-node");
 
 // Inputs
 const offlineInput = document.getElementById("offline");
@@ -48,6 +50,7 @@ $("#woods-console").hide();
 $("#home-controls").hide();
 $("#the-plains").hide();
 $("#travel-ops2").hide();
+$("#travel-hunting").hide();
 
 // Conditional styling functions
 function hidePresets () {

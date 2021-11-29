@@ -41,6 +41,7 @@ let mushrooms = 0;
 let water = 0;
 let food = 0;
 let water_bodies = 0;
+let bullets = 0;
 
 // Supply limits for the woods
 let woods_1_full = 50;
