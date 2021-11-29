@@ -7,22 +7,18 @@ function createDay (weather) { // Day and Night, although night only needs one c
   const lowerCaseWeather = weather.toLowerCase();
   
   if (lowerCaseWeather === "sunny") {
-    game_window.style.backgroundColor = "beige";
     main_body.style.backgroundColor = "beige";
   }
 
   else if (lowerCaseWeather === "cloudy") {
-    game_window.style.backgroundColor = "#373434";
     main_body.style.backgroundColor = "#373434";
   }
 
   else if (lowerCaseWeather === "night") {
-    game_window.style.backgroundColor = "black";
     main_body.style.backgroundColor = "black";
   }
 
   else if (lowerCaseWeather === "snow") {
-    game_window.style.backgroundColor = "white";
     main_body.style.backgroundColor = "white";
   }
 

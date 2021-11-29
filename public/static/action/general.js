@@ -51,6 +51,9 @@ $("#home-controls").hide();
 $("#the-plains").hide();
 $("#travel-ops2").hide();
 $("#travel-hunting").hide();
+$("#deer").hide();
+$("#bear").hide();
+$("#turkey").hide();
 
 // Conditional styling functions
 function hidePresets () {

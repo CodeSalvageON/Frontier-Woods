@@ -51,7 +51,6 @@ input {
   height: 600px;
   border-radius: 5px;
   border: 3px solid red;
-  transition: background-color ease-in-out 5s;
 }
 
 #game-window:hover {
@@ -80,7 +79,7 @@ input {
   background-color: #4a4948;
 }
 
-#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #upgrade-btn, #cook-btn, #go-back-from-the-plains, #abort-journey {
+#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #upgrade-btn, #cook-btn, #go-back-from-the-plains, #abort-journey, #fire-weapon-hunting {
   width: 300px;
 }
 
@@ -156,12 +155,12 @@ input {
   background-color: red;
 }
 
-#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey {
+#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey, #fire-weapon-hunting {
   color: red;
   background-color: black;
 }
 
-#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover {
+#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover, #fire-weapon-hunting:hover {
   background-color: red;
 }
 

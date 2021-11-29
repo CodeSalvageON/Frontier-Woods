@@ -11,6 +11,9 @@ var bodyParser = require('body-parser');
 var port = process.env.PORT || 3000;
 var io = require('socket.io')(http);
 
+// Repl database
+const Database = require("@replit/database");
+
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));

@@ -306,6 +306,20 @@ $("#go-back-from-the-plains").click(function () {
 function loadHunt () {
   $("#travel-ops2").hide();
   $("#travel-hunting").show();
+
+  animalRand = Math.floor(Math.random() * 3);
+
+  if (animalRand === 0) {
+    $("#deer").show();
+  }
+
+  else if (animalRand === 1) {
+    $("#turkey").show();
+  }
+
+  else {
+    $("#bear").show();
+  }
 }
 
 $("#start-exploring").click(function () {
@@ -350,4 +364,23 @@ $("#start-exploring").click(function () {
       loadHunt();
     }
   }, 10000);
+});
+
+$("#cook-btn").click(function () {
+  if (meat < 1) {
+    home_status.innerText = "You do not have meat";
+  }
+
+  else {
+    if (wood < 5) {
+      let wood_needed = 5 - wood;
+      home_status.innerText = "You need " + wood_needed + " wood";
+    }
+
+    else {
+      meat = meat - 1;
+      cooked_meat += 1;
+      home_status.innerText = "Cooked meat";
+    }
+  }
 });
