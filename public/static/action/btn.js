@@ -322,6 +322,11 @@ function loadHunt () {
   }
 }
 
+function loadTown () {
+  $("#travel-ops2").hide();
+  $("#travel-town").show();
+}
+
 $("#start-exploring").click(function () {
   $("#travel-ops1").hide();
   $("#travel-ops2").show();
@@ -362,6 +367,62 @@ $("#start-exploring").click(function () {
     else if (randSupply === 3) {
       is_hunting = true;
       loadHunt();
+    }
+
+    else if (randSupply === 4) {
+      mining_node.innerText = "Found an assortment of seeds.";
+      seeds += randSupplyAmount();
+    }
+
+    else if (randSupply === 5) {
+      mining_node.innerText = "Dug up some long grass.";
+      grass += randSupplyAmount();
+    }
+
+    else if (randSupply === 6) {
+      mining_node.innerText = "Came across a pile of manure.";
+      manure += randSupplyAmount();
+    }
+
+    else if (randSupply === 7) {
+      mining_node.innerText = "Collected some urine.";
+      urine += randSupplyAmount();
+    }
+
+    else if (randSupply === 8) {
+      mining_node.innerText = "Picked up a handful of stones.";
+      stones += randSupplyAmount();
+    }
+
+    else if (randSupply === 9) {
+      mining_node.innerText = "Found a geyser full of sulfur!";
+      sulfur += randSupplyAmount();
+    }
+
+    else if (randSupply === 10) {
+      mining_node.innerText = "Rummaged through a berry bush.";
+      berries += randSupplyAmount();
+    }
+
+    else if (randSupply === 11) {
+      mining_node.innerText = "Dug up a patch of mushrooms.";
+      mushrooms += randSupplyAmount();
+    }
+
+    else if (randSupply === 12) {
+      mining_node.innerText = "You found a water source! Perfect!";
+      water_bodies += randSupplyAmount();
+    }
+
+    else if (randSupply === 13) {
+      mining_node.innerText = "Came across a town or an outpost of some sort.";
+      is_hunting = true;
+
+      loadTown();
+    }
+
+    else {
+      mining_node.innerText = "Nothing thus far.";
     }
   }, 10000);
 });
