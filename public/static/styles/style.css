@@ -114,7 +114,8 @@ input {
 #travel-hunting {
   width: 500px;
   height: 400px;
-  background-color: black;
+  position: relative;
+  background-color: grey;
 }
 
 #woods-controls, #home-controls {
@@ -155,12 +156,12 @@ input {
   background-color: red;
 }
 
-#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town {
+#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #go-back-from-console {
   color: red;
   background-color: black;
 }
 
-#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover, #fire-weapon-hunting:hover, #trade-with-town:hover, #raid-town:hover {
+#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover, #fire-weapon-hunting:hover, #trade-with-town:hover, #raid-town:hover, #go-back-from-console:hover {
   background-color: red;
 }
 
@@ -183,6 +184,13 @@ input {
   height: 56px;
   position: absolute;
   background-color: blue;
+}
+
+#hunt-bar {
+  width: 50px;
+  height: 10px;
+  position: absolute;
+  background-color: red;
 }
 
 /* Font Faces */

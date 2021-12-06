@@ -371,47 +371,47 @@ $("#start-exploring").click(function () {
 
     else if (randSupply === 4) {
       mining_node.innerText = "Found an assortment of seeds.";
-      seeds += randSupplyAmount();
+      seeds += randSupplyAmount;
     }
 
     else if (randSupply === 5) {
       mining_node.innerText = "Dug up some long grass.";
-      grass += randSupplyAmount();
+      grass += randSupplyAmount;
     }
 
     else if (randSupply === 6) {
       mining_node.innerText = "Came across a pile of manure.";
-      manure += randSupplyAmount();
+      manure += randSupplyAmount;
     }
 
     else if (randSupply === 7) {
       mining_node.innerText = "Collected some urine.";
-      urine += randSupplyAmount();
+      urine += randSupplyAmount;
     }
 
     else if (randSupply === 8) {
       mining_node.innerText = "Picked up a handful of stones.";
-      stones += randSupplyAmount();
+      stones += randSupplyAmount;
     }
 
     else if (randSupply === 9) {
       mining_node.innerText = "Found a geyser full of sulfur!";
-      sulfur += randSupplyAmount();
+      sulfur += randSupplyAmount;
     }
 
     else if (randSupply === 10) {
       mining_node.innerText = "Rummaged through a berry bush.";
-      berries += randSupplyAmount();
+      berries += randSupplyAmount;
     }
 
     else if (randSupply === 11) {
       mining_node.innerText = "Dug up a patch of mushrooms.";
-      mushrooms += randSupplyAmount();
+      mushrooms += randSupplyAmount;
     }
 
     else if (randSupply === 12) {
       mining_node.innerText = "You found a water source! Perfect!";
-      water_bodies += randSupplyAmount();
+      water_bodies += randSupplyAmount;
     }
 
     else if (randSupply === 13) {
@@ -421,10 +421,22 @@ $("#start-exploring").click(function () {
       loadTown();
     }
 
+    else if (randSupply === 14) {
+      mining_node.innerText = "Some experience for all your troubles.";
+      exp += randSupplyAmount;
+    }
+
     else {
       mining_node.innerText = "Nothing thus far.";
     }
   }, 10000);
+
+  $("#abort-journey").click(function () {
+    clearInterval(miningInterval);
+
+    switchPage("#travel-ops2", "#the-woods");
+    
+  });
 });
 
 $("#cook-btn").click(function () {
@@ -443,5 +455,25 @@ $("#cook-btn").click(function () {
       cooked_meat += 1;
       home_status.innerText = "Cooked meat";
     }
+  }
+});
+
+$("#view-console").click(function () {
+  $("#woods-controls").hide();
+  $("#woods-console").show();
+});
+
+$("#go-back-from-console").click(function () {
+  $("#woods-console").hide();
+  $("#woods-controls").show();
+});
+
+$("#goto-water").click(function () {
+  if (water_bodies === 0) {
+    
+  }
+
+  else {
+    
   }
 });
