@@ -488,3 +488,7 @@ $("#goto-water").click(function () {
 $("#build-tools").click(function () {
   switchPage("#the-woods", "#tools-build");
 });
+
+$("#go-back-from-tools").click(function () {
+  switchPage("#tools-build", "#the-woods");
+});

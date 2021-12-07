@@ -79,7 +79,7 @@ input {
   background-color: #4a4948;
 }
 
-#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #upgrade-btn, #cook-btn, #go-back-from-the-plains, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town {
+#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #upgrade-btn, #cook-btn, #go-back-from-the-plains, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #tools-research-btn, #go-back-from-tools {
   width: 300px;
 }
 
@@ -156,12 +156,12 @@ input {
   background-color: red;
 }
 
-#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #go-back-from-console, #build-tools {
+#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #go-back-from-console, #build-tools, #tools-research-btn, #go-back-from-tools {
   color: red;
   background-color: black;
 }
 
-#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover, #fire-weapon-hunting:hover, #trade-with-town:hover, #raid-town:hover, #go-back-from-console:hover, #build-tools:hover {
+#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover, #fire-weapon-hunting:hover, #trade-with-town:hover, #raid-town:hover, #go-back-from-console:hover, #build-tools:hover, #tools-research-btn:hover, #go-back-from-tools:hover {
   background-color: red;
 }
 
