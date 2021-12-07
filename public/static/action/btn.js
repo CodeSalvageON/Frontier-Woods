@@ -436,6 +436,13 @@ $("#start-exploring").click(function () {
 
     switchPage("#travel-ops2", "#the-woods");
     
+    $("#the-plains").hide();
+    $("#travel-ops2").hide();
+    $("#travel-hunting").hide();
+    $("#deer").hide();
+    $("#bear").hide();
+    $("#turkey").hide();
+    $("#travel-town").hide();
   });
 });
 
@@ -476,4 +483,8 @@ $("#goto-water").click(function () {
   else {
     
   }
+});
+
+$("#build-tools").click(function () {
+  switchPage("#the-woods", "#tools-build");
 });

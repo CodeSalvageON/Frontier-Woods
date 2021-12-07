@@ -55,6 +55,7 @@ $("#deer").hide();
 $("#bear").hide();
 $("#turkey").hide();
 $("#travel-town").hide();
+$("#tools-build").hide();
 
 // Conditional styling functions
 function hidePresets () {

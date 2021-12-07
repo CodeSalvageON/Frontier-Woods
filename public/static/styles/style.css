@@ -104,7 +104,7 @@ input {
   background-color: burlywood;
 }
 
-#the-plains, #travel-ops2, #travel-town {
+#the-plains, #travel-ops2, #travel-town, #tools-build {
   width: 500px;
   height: 400px;
   border-radius: 5px;
@@ -156,12 +156,12 @@ input {
   background-color: red;
 }
 
-#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #go-back-from-console {
+#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #go-back-from-console, #build-tools {
   color: red;
   background-color: black;
 }
 
-#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover, #fire-weapon-hunting:hover, #trade-with-town:hover, #raid-town:hover, #go-back-from-console:hover {
+#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover, #fire-weapon-hunting:hover, #trade-with-town:hover, #raid-town:hover, #go-back-from-console:hover, #build-tools:hover {
   background-color: red;
 }
 
