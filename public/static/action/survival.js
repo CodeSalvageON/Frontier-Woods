@@ -53,6 +53,7 @@ let trap1 = 0;
 let trap2 = 0;
 let fishing_rod = 0;
 let nets = 0;
+let rifles = 0;
 
 // Supply limits for the woods
 let woods_1_full = 50;
@@ -194,6 +195,8 @@ const trap1_store = localStorage.getItem("frwoods_trap1");
 const trap2_store = localStorage.getItem("frwoods_trap2");
 const fishing_rod_store = localStorage.getItem("frwoods_fishing_rod");
 const nets_store = localStorage.getItem("frwoods_nets");
+const bullets_store = localStorage.getItem("frwoods_bullets");
+const rifles_store = localStorage.getItem("frwoods_rifles");
 
 function startNaturalFuncs () {
   setInterval(function () {

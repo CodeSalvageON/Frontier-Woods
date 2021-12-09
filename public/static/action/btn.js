@@ -728,6 +728,10 @@ $("#tools-research").submit(function () {
 
       else {
         tool_error.innerText = "Built one rifle.";
+        rifles += 1;
+
+        wood = wood - 4;
+        metal = metal - 2;
       }
     }
   }
