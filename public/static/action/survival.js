@@ -42,6 +42,17 @@ let water = 0;
 let food = 0;
 let water_bodies = 0;
 let bullets = 0;
+let stone_knives = 0;
+let arrows = 0;
+let rope = 0;
+let bow = 0;
+let axe = 0;
+let saw = 0;
+let sword = 0;
+let trap1 = 0;
+let trap2 = 0;
+let fishing_rod = 0;
+let nets = 0;
 
 // Supply limits for the woods
 let woods_1_full = 50;
@@ -172,6 +183,17 @@ const mushrooms_store = localStorage.getItem("frwoods_mushrooms");
 const water_store = localStorage.getItem("frwoods_water");
 const food_store = localStorage.getItem("frwoods_food");
 const water_bodies_store = localStorage.getItem("frwoods_water_bodies");
+const stone_knives_store = localStorage.getItem("frwoods_stone_knives");
+const arrows_store = localStorage.getItem("frwoods_arrows");
+const rope_store = localStorage.getItem("frwoods_rope");
+const bow_store = localStorage.getItem("frwoods_bow");
+const axe_store = localStorage.getItem("frwoods_axe");
+const saw_store = localStorage.getItem("frwoods_saw");
+const sword_store = localStorage.getItem("frwoods_sword");
+const trap1_store = localStorage.getItem("frwoods_trap1");
+const trap2_store = localStorage.getItem("frwoods_trap2");
+const fishing_rod_store = localStorage.getItem("frwoods_fishing_rod");
+const nets_store = localStorage.getItem("frwoods_nets");
 
 function startNaturalFuncs () {
   setInterval(function () {

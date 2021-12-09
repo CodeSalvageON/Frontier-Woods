@@ -187,14 +187,14 @@
         </div>
         <h4>Tools Research</h4>
         <form id="tools-research">
-          <select class="weird-btn commodore">
+          <select class="weird-btn commodore" id="tool-select">
             <option value="stone_knife">Stone Knife</option>
             <option value="arrow">Arrow</option>
             <option value="rope">Rope</option>
             <option value="bow">Bow</option>
             <option value="axe">Axe</option>
             <option value="saw">Wood Saw</option>
-            <option value="sword"></option>
+            <option value="sword">Sword</option>
             <option value="trap1">Small Trap</option>
             <option value="trap2">Bear Trap</option>
             <option value="fishing_rod">Fishing Rod</option>
@@ -205,9 +205,10 @@
           <br/>
           <img src="/static/images/workbench.png" class="center" height="160" width="250">
           <br/>
-          <div class="weird-btn center" id="tools-research-btn">
+          <button class="weird-btn center" id="tools-research-btn">
             <center><pre class="commodore">Build Tool</pre></center>
-          </div>
+          </button>
+          <h4 class="center" id="tool-error"></h4>
         </form>
       </div>
     </div>

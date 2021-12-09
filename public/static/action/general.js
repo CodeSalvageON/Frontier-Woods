@@ -15,6 +15,7 @@ const snow_sound = document.getElementById("snow-sound");
 const gunshot_sound = document.getElementById("gunshot-sound");
 const status = document.getElementById("status");
 const home_status = document.getElementById("home-status");
+const tool_error = document.getElementById("tool-error");
 
 // Statistics
 const temp_stat = document.getElementById("temp-stat");
@@ -32,6 +33,7 @@ const offlineInput = document.getElementById("offline");
 const onlineInput = document.getElementById("online");
 const serverWeatherInput = document.getElementById("server-weather");
 const offlineWeatherInput = document.getElementById("offline-weather");
+const toolSelect = document.getElementById("tool-select");
 
 // Saved Presets
 let temp_mode_preset = "";

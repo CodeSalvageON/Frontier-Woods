@@ -492,3 +492,243 @@ $("#build-tools").click(function () {
 $("#go-back-from-tools").click(function () {
   switchPage("#tools-build", "#the-woods");
 });
+
+$("#tools-research").submit(function () {
+  event.preventDefault();
+
+  let tool_value = toolSelect.value;
+
+  if (tool_value === "stone_knife") {
+    if (stones < 2) {
+      tool_error.innerText = "You need " + String(2 - stones) + " stones.";
+    }
+
+    else {
+      stone_knives += 1;
+      tool_error.innerText = "Built one stone knife.";
+      stones = stones - 2;
+    }
+  }
+
+  else if (tool_value === "arrow") {
+    if (wood < 1) {
+      tool_error.innerText = "You need " + String(1 - wood) + " wood.";
+    }
+
+    else {
+      if (stones < 1) {
+        tool_error.innerText = "You need " + String(1 - stones) + " stones.";
+      }
+
+      else {
+        arrows += 1;
+        tool_error.innerText = "Built one arrow.";
+
+        wood = wood - 1;
+        stones = stones - 1;
+      }
+    }
+  }
+
+  else if (tool_value === "rope") {
+    if (wood < 10) {
+      tool_error.innerText = "You need " + String(10 - wood) + " wood.";
+    }
+
+    else {
+      rope += 1;
+      tool_error.innerText = "Built one rope.";
+
+      wood = wood - 10;
+    }
+  }
+
+  else if (tool_value === "bow") {
+    if (wood < 5) {
+      tool_error.innerText = "You need " + String(5 - wood) + " wood.";
+    }
+
+    else {
+      if (rope < 1) {
+        tool_error.innerText = "You need " + String(1 - rope) + " rope.";
+      }
+
+      else {
+        bow += 1;
+        tool_error.innerText = "Built one bow.";
+
+        wood = wood - 5;
+        rope = rope - 1
+      }
+    }
+  }
+
+  else if (tool_value === "axe") {
+    if (wood < 1) {
+      tool_error.innerText = "You need " + String(1 - wood) + " wood.";
+    }
+
+    else {
+      if (metal < 3) {
+        tool_error.innerText = "You need " + String(3 - metal) + " metal.";
+      }
+
+      else {
+        axe += 1;
+        tool_error.innerText = "Built one axe.";
+
+        wood = wood - 1;
+        metal = metal - 3;
+      }
+    }
+  }
+
+  else if (tool_value === "saw") {
+    if (wood < 2) {
+      tool_error.innerText = "You need " + String(2 - wood) + " wood.";
+    }
+
+    else {
+      if (metal < 2) {
+        tool_error.innerText = "You need" + String(2 - metal) + " metal.";
+      }
+
+      else {
+        saw += 1;
+        tool_error.innerText = "Built one wood saw.";
+
+        wood = wood - 2;
+        metal = metal - 2;
+      }
+    }
+  }
+
+  else if (tool_value === "sword") {
+    if (wood < 1) {
+      tool_error.innerText = "You need " + String(1 - wood) + " wood.";
+    }
+
+    else {
+      if (metal < 2) {
+        tool_error.innerText = "You need " + String(2 - metal) + " metal.";
+      }
+
+      else {
+        sword += 1;
+        tool_error.innerText = "Built one sword.";
+
+        wood = wood - 1;
+        metal = metal -2;
+      }
+    }
+  }
+
+  else if (tool_value === "trap1") {
+    if (wood < 10) {
+      tool_error.innerText = "You need " + String(10 - wood) + " wood.";
+    }
+
+    else {
+      trap1 += 1;
+      tool_error.innerText = "Built one small wooden trap.";
+
+      wood = wood - 10;
+    }
+  }
+
+  else if (tool_value === "trap2") {
+    if (metal < 10) {
+      tool_error.innerText = "You need " + String(10 - metal) + " metal.";
+    }
+
+    else {
+      trap2 += 1;
+      tool_error.innerText = "Built one metal bear trap.";
+
+      metal = metal - 10;
+    }
+  }
+
+  else if (tool_value === "fishing_rod") {
+    if (wood < 5) {
+      tool_error.innerText = "You need " + String(5 - wood) + " wood.";
+    }
+
+    else {
+      if (rope < 10) {
+        tool_error.innerText = "You need " + String(10 - rope) + " wood.";
+      }
+
+      else {
+        tool_error.innerText = "Built one fishing rod.";
+        fishing_rod += 1;
+
+        wood = wood - 5;
+        rope = rope - 10;
+      }
+    }
+  }
+
+  else if (tool_value === "net") {
+    if (rope < 50) {
+      tool_error.innerText = "You need " + String(50 - rope) + " rope.";
+    }
+
+    else {
+      tool_error.innerText = "Built one net.";
+      nets += 1;
+
+      rope = rope - 50;
+    }
+  }
+
+  else if (tool_value === "bullet") {
+    if (sulfur < 1) {
+      tool_error.innerText = "You need " + String(2 - sulfur);
+    }
+
+    else {
+      if (wood < 2) {
+        tool_error.innerText = "You need " + String(2 - wood);
+      }
+
+      else {
+        if (urine < 3) {
+          tool_error.innerText = "You need " + String(3 - urine);
+        }
+
+        else {
+          if (manure < 3) {
+            tool_error.innerText = "You need " + String(3 - manure);
+          }
+
+          else {
+            tool_error.innerText = "Built one bullet.";
+            bullets += 1;
+
+            sulfur = sulfur - 1;
+            wood = wood - 2;
+            urine = urine - 3;
+            manure = manure - 3;
+          }
+        }
+      }
+    }
+  }
+
+  else if (tool_value === "rifle") {
+    if (wood < 4) {
+      tool_error.innerText = "You need " + String(4 - wood) + " wood.";
+    }
+
+    else {
+      if (metal < 2) {
+        tool_error.innerText = "You need " + String(2 - metal) + " metal.";
+      }
+
+      else {
+        tool_error.innerText = "Built one rifle.";
+      }
+    }
+  }
+});
