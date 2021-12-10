@@ -738,6 +738,11 @@ $("#tools-research").submit(function () {
 });
 
 $("#upgrade-btn").click(function () {
+  if (home_type === 2) {
+    home_status.innerText = "Home at max level";
+    return false;
+  }
+  
   if (wood < 10000) {
     home_status.innerText = "Need " + String(10000 - wood) + " wood.";
   }
