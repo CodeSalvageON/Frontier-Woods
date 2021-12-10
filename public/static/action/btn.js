@@ -684,32 +684,38 @@ $("#tools-research").submit(function () {
 
   else if (tool_value === "bullet") {
     if (sulfur < 1) {
-      tool_error.innerText = "You need " + String(2 - sulfur);
+      tool_error.innerText = "You need " + String(2 - sulfur) + " sulfur";
     }
 
     else {
       if (wood < 2) {
-        tool_error.innerText = "You need " + String(2 - wood);
+        tool_error.innerText = "You need " + String(2 - wood) + " wood";
       }
 
       else {
         if (urine < 3) {
-          tool_error.innerText = "You need " + String(3 - urine);
+          tool_error.innerText = "You need " + String(3 - urine) + " urine";
         }
 
         else {
           if (manure < 3) {
-            tool_error.innerText = "You need " + String(3 - manure);
+            tool_error.innerText = "You need " + String(3 - manure) + " manure";
           }
 
           else {
-            tool_error.innerText = "Built one bullet.";
-            bullets += 1;
+            if (metal < 1) {
+              tool_error.innerText = "You need " + String(1 - metal) + " metal";
+            }
 
-            sulfur = sulfur - 1;
-            wood = wood - 2;
-            urine = urine - 3;
-            manure = manure - 3;
+            else {
+              tool_error.innerText = "Built one bullet.";
+              bullets += 1;
+
+              sulfur = sulfur - 1;
+              wood = wood - 2;
+              urine = urine - 3;
+              manure = manure - 3;
+            }
           }
         }
       }
