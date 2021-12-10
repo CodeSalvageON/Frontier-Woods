@@ -61,6 +61,8 @@ let woods_2_full = 50;
 let woods_3_full = 50;
 let woods_4_full = 50;
 
+let is_upgraded = false;
+
 function getRandomSupplies (amount) {
   const amount_random = Math.floor(Math.random() * amount + 1);
   const supplies_random = Math.floor(Math.random() * 11);
@@ -197,6 +199,8 @@ const fishing_rod_store = localStorage.getItem("frwoods_fishing_rod");
 const nets_store = localStorage.getItem("frwoods_nets");
 const bullets_store = localStorage.getItem("frwoods_bullets");
 const rifles_store = localStorage.getItem("frwoods_rifles");
+
+const is_upgraded_store = localStorage.getItem("frwoods_upgraded");
 
 function startNaturalFuncs () {
   setInterval(function () {

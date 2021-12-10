@@ -736,3 +736,15 @@ $("#tools-research").submit(function () {
     }
   }
 });
+
+$("#upgrade-btn").click(function () {
+  if (wood < 10000) {
+    home_status.innerText = "Need " + String(10000 - wood) + " wood.";
+  }
+
+  else {
+    home_type = 2;
+    home_status.innerText = "Upgraded home.";
+    switchView("cabin.png");
+  }
+});
