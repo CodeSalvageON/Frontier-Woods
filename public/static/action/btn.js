@@ -783,13 +783,46 @@ $("#lay-traps").click(function () { // I could really have optimized this better
           setTimeout(function () {
             status.innerText = "Got " + catchRNG + " hare meat.";
             meat += catchRNG;
+            trap1 = trap1 - 1;
           }, 5000);
         }
       }
     }
 
     else if (type === "bear") {
-      
+      for (i = 0; i < amount; i++) {
+        let trapRNG = Math.floor(Math.random() * 2);
+        let catchRNG = Math.floor(Math.random() * 5);
+
+        if (catchRNG === 0) {
+          catchRNG = 1;
+        }
+
+        if (trapRNG === 0) {
+          setTimeout(function () {
+            status.innerText = "Broken trap, caught nothing.";
+          }, 5000);
+        }
+
+        else {
+          setTimeout(function () {
+            status.innerText = "Got " + catchRNG + " bear meat.";
+            meat += catchRNG * 2;
+            trap2 = trap2 - 1;
+          }, 5000);
+        }
+      }
+    }
+
+    else if (type === "both") {
+      trap2 = 0;
+      trap1 = 0;
+
+      for (i = 0; i < amount; i++) {
+        meat += 1;
+      }
+
+      status.innerText = "Got a good amount of meat.";
     }
   }
 
