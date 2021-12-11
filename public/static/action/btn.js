@@ -295,6 +295,7 @@ $("#food-btn").click(function () {
 
 $("#travel-btn").click(function () {
   switchPage("#the-woods", "#the-plains");
+  $("#travel-ops1").show();
   food_travel_meter.innerText = "Food to Spare: " + food;
   water_bodies_discovered.innerText = "Water Bodies Discovered: " + water_bodies;
 });
@@ -438,6 +439,7 @@ $("#start-exploring").click(function () {
     
     $("#the-plains").hide();
     $("#travel-ops2").hide();
+    $("#travel-ops1").hide();
     $("#travel-hunting").hide();
     $("#deer").hide();
     $("#bear").hide();
@@ -590,7 +592,7 @@ $("#tools-research").submit(function () {
 
     else {
       if (metal < 2) {
-        tool_error.innerText = "You need" + String(2 - metal) + " metal.";
+        tool_error.innerText = "You need " + String(2 - metal) + " metal.";
       }
 
       else {
@@ -757,5 +759,57 @@ $("#upgrade-btn").click(function () {
     home_type = 2;
     home_status.innerText = "Upgraded home.";
     switchView("cabin.png");
+  }
+});
+
+$("#lay-traps").click(function () { // I could really have optimized this better but oh well
+  function checkTraps (type, amount) {
+    if (type === "small") {
+      for (i = 0; i < amount; i++) {
+        let trapRNG = Math.floor(Math.random() * 2);
+        let catchRNG = Math.floor(Math.random() * 5);
+
+        if (catchRNG === 0) {
+          catchRNG = 1;
+        }
+
+        if (trapRNG === 0) {
+          setTimeout(function () {
+            status.innerText = "Broken trap, caught nothing.";
+          }, 5000);
+        }
+
+        else {
+          setTimeout(function () {
+            status.innerText = "Got " + catchRNG + " hare meat.";
+            meat += catchRNG;
+          }, 5000);
+        }
+      }
+    }
+
+    else if (type === "bear") {
+      
+    }
+  }
+
+  if (trap1 < 1 && trap2 < 1) {
+    status.innerText = "You don't have any traps.";
+  }
+
+  else {
+    if (trap1 > 0 && trap2 < 1) {
+      status.innerText = "Set " + trap1 + " wooden traps.";
+    }
+
+    else {
+      if (trap1 < 1 && trap2 > 0) {
+        status.innerText = "Set " + trap2 + " bear traps.";
+      }
+
+      else {
+        status.innerText = "Set " + String(trap1 + trap2) + "wooden and bear traps.";
+      }
+    }
   }
 });
