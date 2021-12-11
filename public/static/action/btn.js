@@ -833,15 +833,18 @@ $("#lay-traps").click(function () { // I could really have optimized this better
   else {
     if (trap1 > 0 && trap2 < 1) {
       status.innerText = "Set " + trap1 + " wooden traps.";
+      checkTraps("small", trap1);
     }
 
     else {
       if (trap1 < 1 && trap2 > 0) {
         status.innerText = "Set " + trap2 + " bear traps.";
+        checkTraps("bear", trap2);
       }
 
       else {
         status.innerText = "Set " + String(trap1 + trap2) + "wooden and bear traps.";
+        checkTraps("both", trap1 + trap2);
       }
     }
   }
