@@ -90,3 +90,9 @@ function switchView (src) {
     $("#woods-pic").show();
   }, 200);
 }
+
+// Death Screen
+
+function loadDeath () {
+  
+}

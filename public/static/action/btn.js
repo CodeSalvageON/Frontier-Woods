@@ -366,8 +366,10 @@ $("#start-exploring").click(function () {
     }
 
     else if (randSupply === 3) {
-      is_hunting = true;
-      loadHunt();
+      // is_hunting = true;
+      // loadHunt();
+      mining_node.innerText = "Killed a hare.";
+      meat += 1;
     }
 
     else if (randSupply === 4) {
