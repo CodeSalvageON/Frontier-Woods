@@ -1,0 +1,11 @@
+/* CSS Animations */
+
+@keyframes spin { /* Spin animation credit goes to https://codepen.io/teerapuch/pen/vLJXeR! */
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

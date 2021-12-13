@@ -79,7 +79,7 @@ input {
   background-color: #4a4948;
 }
 
-#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #upgrade-btn, #cook-btn, #go-back-from-the-plains, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #tools-research-btn, #go-back-from-tools {
+#presets-btn, #credits-btn, #file-btn, #go-back-from-credits, #upgrade-btn, #cook-btn, #go-back-from-the-plains, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #tools-research-btn, #go-back-from-tools, #go-back-from-the-hunt {
   width: 300px;
 }
 
@@ -111,7 +111,7 @@ input {
   background-color: white;
 }
 
-#travel-hunting {
+#travel-hunting, #the-hunt {
   width: 500px;
   height: 400px;
   position: relative;
@@ -156,12 +156,12 @@ input {
   background-color: red;
 }
 
-#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #go-back-from-console, #build-tools, #tools-research-btn, #go-back-from-tools, #go-hunting {
+#view-console, #forage, #go-back-from-home, #lay-traps, #go-back-from-the-plains, #start-exploring, #abort-journey, #fire-weapon-hunting, #goto-water, #trade-with-town, #raid-town, #go-back-from-console, #build-tools, #tools-research-btn, #go-back-from-tools, #go-hunting, #go-back-from-the-hunt {
   color: red;
   background-color: black;
 }
 
-#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover, #fire-weapon-hunting:hover, #trade-with-town:hover, #raid-town:hover, #go-back-from-console:hover, #build-tools:hover, #tools-research-btn:hover, #go-back-from-tools:hover, #go-hunting:hover {
+#view-console:hover, #forage:hover, #go-back-from-home:hover, #start-exploring:hover, #abort-journey:hover, #fire-weapon-hunting:hover, #trade-with-town:hover, #raid-town:hover, #go-back-from-console:hover, #build-tools:hover, #tools-research-btn:hover, #go-back-from-tools:hover, #go-hunting:hover, #go-back-from-the-hunt:hover {
   background-color: red;
 }
 

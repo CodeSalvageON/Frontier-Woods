@@ -851,3 +851,11 @@ $("#lay-traps").click(function () { // I could really have optimized this better
     }
   }
 });
+
+$("#go-hunting").click(function () {
+  switchPage("#the-woods", "#the-hunt");
+});
+
+$("#go-back-from-the-hunt").click(function () {
+  switchPage("#the-hunt", "#the-woods");
+});
