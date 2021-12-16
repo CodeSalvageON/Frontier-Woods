@@ -859,3 +859,72 @@ $("#go-hunting").click(function () {
 $("#go-back-from-the-hunt").click(function () {
   switchPage("#the-hunt", "#the-woods");
 });
+
+$("#start-the-hunt").click(function () {
+  if (stone_knives === 0 && bow === 0 && axe === 0 && saw === 0 && sword === 0 && rifles === 0) {
+    hunt_status.innerText = "You have no weapon.";
+  }
+
+  else {
+    if (rifles > 0 && stone_knives === 0 && bow === 0 && axe === 0 && saw === 0 && rifles === 0 && sword === 0) {
+      if (bullets < 1) {
+        hunt_status.innerText = "You have no bullets for your rifle";
+      }
+    }
+
+    else {
+      if (bow > 0 && stone_knives === 0 && rifles === 0 && axe === 0 && saw === 0 && sword === 0) {
+        if (arrows < 1) {
+          hunt_status.innerText = "You have no arrows for your bow";
+        }
+      }
+
+      else { 
+        function goHunting (power) {
+          let prePower = 20;
+          let newPower = prePower - power;
+
+          const randHuntResult = Math.floor(Math.random() * newPower);
+
+          if (randHuntResult === 0) {
+            hunt_status.innerText = "Got a good sized bear.";
+            meat += 10;
+          }
+
+          else if (randHuntResult === 1) {
+            hunt_status.innerText = "Got a nice-sized deer.";
+            meat += 6;
+          }
+
+          else {
+            hunt_status.innerText = "Bad hunt; didn't get anything";
+          }
+        }
+        
+        if (rifle > 0) {
+          goHunting(10);
+        }
+
+        else if (bow > 0) {
+          goHunting(8);
+        }
+
+        else if (sword > 0) {
+          goHunting(6);
+        }
+
+        else if (axe > 0) {
+          goHunting(4);
+        }
+
+        else if (saw > 0) {
+          goHunting(2);
+        }
+
+        else if (stone_knives > 0) {
+          goHunting(0);
+        }
+      }
+    }
+  }
+});

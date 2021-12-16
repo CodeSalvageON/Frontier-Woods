@@ -16,6 +16,7 @@ const gunshot_sound = document.getElementById("gunshot-sound");
 const status = document.getElementById("status");
 const home_status = document.getElementById("home-status");
 const tool_error = document.getElementById("tool-error");
+const hunt_status = document.getElementById("hunt-status");
 
 // Statistics
 const temp_stat = document.getElementById("temp-stat");
