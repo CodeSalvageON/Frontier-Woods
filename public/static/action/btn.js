@@ -901,7 +901,7 @@ $("#start-the-hunt").click(function () {
           }
         }
         
-        if (rifle > 0) {
+        if (rifles > 0) {
           goHunting(10);
         }
 
