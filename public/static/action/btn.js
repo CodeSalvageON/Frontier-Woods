@@ -86,6 +86,7 @@ $("#skip-tutorial").click(function () {
     $("#woods-controls").fadeIn(5000);
 
     setOfflineWeather();
+    startNaturalFuncs();
   }, 500);
 });
 
@@ -927,4 +928,11 @@ $("#start-the-hunt").click(function () {
       }
     }
   }
+});
+
+$("#save-game").click(function () {
+  let save_data = health + "," + hunger + "," + hydro + "," + woods_view + "," + home_type + "," + wood + "," + metal + "," + acorns + "," + meat + "," + seeds + "," + cooked_meat + "," + fur + "," + charcoal + "," + grass + "," + manure + "," + urine + "," + stones + "," + sulfur + "," + berries + "," + mushrooms + "," + water + "," + water_bodies + "," + bullets + "," + stone_knives + "," + arrows + "," + rope + "," + bow + "," + axe + "," + saw + "," + sword + "," + trap1 + "," + trap2 + "," + fishing_rod + "," + nets + "," + rifles;
+  const save_code = sjcl.encrypt("save", save_data);
+
+  alert("Save code: " + save_code);
 });
